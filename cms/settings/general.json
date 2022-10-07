@@ -8,6 +8,20 @@
     "btnBuy": "Buy now",
     "privacyLabel": "Privacy",
     "termsLabel": "Terms",
+    "social": [
+      {
+        "id": "facebook",
+        "url": "https://www.facebook.com/internispa/"
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/interni.online/"
+      },
+      {
+        "id": "linkedin",
+        "url": "https://www.linkedin.com/company/internispa/"
+      }
+    ],
     "generalTitle": "General Info",
     "cookieLabel": "Cookie",
     "brandName": "Interni.online",
