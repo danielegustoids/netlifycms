@@ -29,6 +29,13 @@
     "footerPayoff": "piede pagina claim",
     "footerPrivacyLink": "#privacyIt",
     "footerCookieLink": "#cookieIt",
-    "footerTermsLink": "#termsIt"
+    "footerTermsLink": "#termsIt",
+    "infoPage": "page-01",
+    "optionsNav": [
+      {
+        "target": "_blank",
+        "page": "page-02"
+      }
+    ]
   }
 }
