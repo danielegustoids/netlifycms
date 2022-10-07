@@ -113,5 +113,18 @@ collections:
               - label: Lang
                 name: lang
                 widget: select
-                default: "en"
+                default: ["en"]
                 options: ["en", "it"]
+
+          - label: Social
+            name: optionsSocial
+            widget: "list"
+            summary: '{{fields.lang}}: {{fields.infoPage}}'
+            fields:
+              - label: Id
+                name: id
+                widget: string
+              - label: Url
+                name: url
+                widget: string
+            
