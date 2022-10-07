@@ -74,46 +74,68 @@ collections:
           - label: Brand name
             name: brandName
             widget: string
+            required: false
+
           - label: Brand link
             name: brandLink
             widget: string
             i18n: true
+            required: false
+
           - label: Base page title
             name: basePageTitle
             widget: string
             i18n: true
+            required: false
+
           - label: Btn Cart
             name: btnCart
             widget: string
             i18n: true
+            required: false
+
           - label: Btn Buy
             name: btnBuy
             widget: string
             i18n: true
+            required: false
+
           - label: Notes Title
             name: notesTitle
             widget: string
             i18n: true
+            required: false
+
           - label: Notes Text
             name: notesText
             widget: string
             i18n: true
+            required: false
+
           - label: Footer payoff
             name: footerPayoff
             widget: string
             i18n: true
+            required: false
+
           - label: Footer privacy link
             name: footerPrivacyLink
             widget: string
             i18n: true
+            required: false
+
           - label: Footer cookie link
             name: footerCookieLink
             widget: string
             i18n: true
+            required: false
+
           - label: Footer terms link
             name: footerTermsLink
             widget: string
             i18n: true
+            required: false
+
           - label: Info Page
             name: infoPage
             widget: relation
