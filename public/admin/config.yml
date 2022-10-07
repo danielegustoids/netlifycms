@@ -76,3 +76,26 @@ collections:
           - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
           - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
           - { label: 'General text', name: 'generalText', widget: 'string', i18n: true }
+          - { label: 'Privacy label', name: 'privacyLabel', widget: 'string', i18n: true }
+          - { label: 'Privacy link', name: 'privacyLink', widget: 'string', i18n: true }
+          - { label: 'Cookie label', name: 'cookieLabel', widget: 'string', i18n: true }
+          - { label: 'Cookie link', name: 'cookieLink', widget: 'string', i18n: true }
+          - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
+          - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
+          - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
+          - { label: 'Footer payoff', name: 'footerPayoff', widget: 'string', i18n: true }
+          - label: 'Nav'
+            name: 'navigation'
+            widget: 'list'
+            summary: '{{fields.page}}'
+            fields:
+              - { label: 'Route', name: 'navOption', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
+          - label: 'Social'
+            name: 'social'
+            widget: 'list'
+            summary: '{{fields.id}}'
+            fields:
+              - { label: 'Id', name: 'id', widget: 'string'}
+              - { label: 'Url', name: 'url', widget: 'string'}
+          
+          
