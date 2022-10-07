@@ -100,18 +100,6 @@ collections:
             i18n: true
             required: false
 
-          - label: Notes Title
-            name: notesTitle
-            widget: string
-            i18n: true
-            required: false
-
-          - label: Notes Text
-            name: notesText
-            widget: string
-            i18n: true
-            required: false
-
           - label: Footer payoff
             name: footerPayoff
             widget: string
