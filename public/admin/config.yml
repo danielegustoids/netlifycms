@@ -74,8 +74,20 @@ collections:
           - label: Brand name
             name: brandName
             widget: string
+          - label: Brand link
+            name: brandLink
+            widget: string
+            i18n: true
           - label: Base page title
             name: basePageTitle
+            widget: string
+            i18n: true
+          - label: Btn Cart
+            name: btnCart
+            widget: string
+            i18n: true
+          - label: Btn Buy
+            name: btnBuy
             widget: string
             i18n: true
           - label: Footer payoff
