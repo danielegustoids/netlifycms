@@ -3,6 +3,10 @@
   "optionsNav": [
     {
       "target": "_parent",
+      "page": "page-02"
+    },
+    {
+      "target": "_parent",
       "page": "page-01"
     }
   ],
