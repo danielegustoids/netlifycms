@@ -4,7 +4,7 @@
     "optionsNav": [
       {
         "target": "_blank",
-        "page": "page-02"
+        "page": "a-new-page"
       }
     ],
     "footerTermsLink": "#termsEn",
@@ -22,7 +22,7 @@
     "brandName": "brand name",
     "basePageTitle": "page title",
     "footerCookieLink": "#cookieEn",
-    "infoPage": "page-01"
+    "infoPage": "a-new-page"
   },
   "it": {
     "basePageTitle": "titolo pagina ",
@@ -30,11 +30,11 @@
     "footerPrivacyLink": "#privacyIt",
     "footerCookieLink": "#cookieIt",
     "footerTermsLink": "#termsIt",
-    "infoPage": "page-01",
+    "infoPage": "a-new-page",
     "optionsNav": [
       {
         "target": "_blank",
-        "page": "page-02"
+        "page": "a-new-page"
       }
     ]
   }
