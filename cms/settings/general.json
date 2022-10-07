@@ -1,1 +1,9 @@
-{}
+{
+  "en": {
+    "brandName": "Interni",
+    "brandLink": "#link"
+  },
+  "it": {
+    "brandLink": "#link2"
+  }
+}
