@@ -1,0 +1,11 @@
+# Redirect users in Australia or New Zealand to /anz.
+# There CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
+#/  /anz     302  Country=au,nz
+# Redirect users in israel to /israel
+#/  /israel  302  Country=il
+
+# Redirect users with Hebrew language preference from /israel to /israel/he
+#/israel/*  /israel/he/:splat  302  Language=he
+
+#Proxy to another service
+#/api/*  https://api.example.com/:splat  200

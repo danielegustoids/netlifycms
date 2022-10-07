@@ -11,7 +11,7 @@ media_folder: static/media
 public_folder: media
 publish_mode: editorial_workflow
 i18n:
-  structure: multiple_folders
+  structure: multiple_files #multiple_folders
   locales: [en, it]
   default_locale: en
 slug:
