@@ -55,9 +55,23 @@
     "termsLabel": "Termini e condizioni",
     "generalTitle": "Informazioni",
     "cookieLabel": "Cookie",
+    "navigation": [
+      {
+        "navOption": "shipping-terms"
+      },
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      }
+    ],
     "generalText": "Tutto quello che serve sapere.",
     "btnCart": "Aggiungi al carrello",
-    "infoPage": "delivery-time-tracking",
+    "infoPage": "a-new-page",
     "cookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy"
   }
 }
