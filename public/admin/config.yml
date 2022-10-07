@@ -90,6 +90,14 @@ collections:
             name: btnBuy
             widget: string
             i18n: true
+          - label: Notes Title
+            name: notesTitle
+            widget: string
+            i18n: true
+          - label: Notes Text
+            name: notesText
+            widget: string
+            i18n: true
           - label: Footer payoff
             name: footerPayoff
             widget: string
