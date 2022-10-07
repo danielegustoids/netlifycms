@@ -1,9 +1,18 @@
 {
   "en": {
     "brandName": "Interni.online",
-    "brandLink": "https://www.internionline.it/it"
+    "brandLink": "https://www.internionline.it/it",
+    "infoPage": "a-new-page",
+    "btnBuy": "Buy now",
+    "btnCart": "Add to cart",
+    "generalTitle": "General Info",
+    "generalText": "Our terms and conditions are very clear."
   },
   "it": {
-    "brandLink": "https://www.internionline.it/en"
+    "brandLink": "https://www.internionline.it/en",
+    "btnBuy": "Compralo",
+    "btnCart": "Aggiungi al carrello",
+    "generalTitle": "Informazioni",
+    "generalText": "Tutto quello che serve sapere."
   }
 }
