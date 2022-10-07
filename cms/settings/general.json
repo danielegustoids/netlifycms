@@ -1,7 +1,7 @@
 {
   "en": {
     "brandLink": "https://www.internionline.it/en",
-    "footerPayoff": "Selected with [LOVE] from Interni spa<br>Via F.Turati 8, 20121 Milano",
+    "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
     "optionsNav": [
       {
         "target": "_blank",
@@ -33,7 +33,7 @@
   },
   "it": {
     "brandLink": "https://www.internionline.it/it",
-    "footerPayoff": "Selected with [LOVE] from Interni spa<br>Via F.Turati 8, 20121 Milano",
+    "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
     "optionsNav": [
       {
         "target": "_blank",
