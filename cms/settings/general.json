@@ -25,9 +25,23 @@
     "generalTitle": "General Info",
     "cookieLabel": "Cookie",
     "brandName": "Interni.online",
+    "navigation": [
+      {
+        "navOption": "shipping-terms"
+      },
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      }
+    ],
     "generalText": "Our terms and conditions are very clear.",
     "btnCart": "Add to cart",
-    "infoPage": "delivery-time-tracking",
+    "infoPage": "a-new-page",
     "cookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy"
   },
   "it": {
@@ -43,7 +57,7 @@
     "cookieLabel": "Cookie",
     "generalText": "Tutto quello che serve sapere.",
     "btnCart": "Aggiungi al carrello",
-    "infoPage": "a-new-page",
+    "infoPage": "delivery-time-tracking",
     "cookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy"
   }
 }
