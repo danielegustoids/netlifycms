@@ -2,54 +2,79 @@
   "en": {
     "brandLink": "https://www.internionline.it/en",
     "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
-    "optionsNav": [
-      {
-        "target": "_blank",
-        "page": "a-new-page"
-      }
-    ],
     "footerTermsLink": "https://www.internionline.it/en/terms",
     "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/57718443",
+    "en": {
+      "brandLink": "https://www.internionline.it/en",
+      "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
+      "optionsNav": [
+        {
+          "target": "_blank",
+          "page": "a-new-page"
+        }
+      ],
+      "footerTermsLink": "https://www.internionline.it/en/terms",
+      "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/57718443",
+      "btnBuy": "Buy now",
+      "optionsSocial": [
+        {
+          "id": "linkedin",
+          "url": "https://www.linkedin.com/company/internispa/"
+        },
+        {
+          "id": "instagram",
+          "url": "https://www.instagram.com/interni.online/"
+        },
+        {
+          "url": "https://www.facebook.com/internispa/",
+          "id": "facebook"
+        }
+      ],
+      "notesText": "Our terms and conditions are very clear. Check it out!",
+      "brandName": "Interni.Online",
+      "notesTitle": "General Info",
+      "basePageTitle": "Interni shop",
+      "footerCookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy",
+      "btnCart": "Add to cart",
+      "infoPage": "a-new-page"
+    },
     "btnBuy": "Buy now",
-    "notesTitle": "General Info",
+    "it": {
+      "brandLink": "https://www.internionline.it/it",
+      "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
+      "optionsNav": [
+        {
+          "target": "_blank",
+          "page": "a-new-page"
+        }
+      ],
+      "footerTermsLink": "https://www.internionline.it/it/terms",
+      "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/86321903",
+      "btnBuy": "Compralo",
+      "notesText": "Our terms and conditions are very clear. Check it out!",
+      "notesTitle": "General Info",
+      "basePageTitle": "Lo shop di Interni",
+      "footerCookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy",
+      "btnCart": "Aggiungi",
+      "infoPage": "a-new-page"
+    },
     "notesText": "Our terms and conditions are very clear. Check it out!",
-    "optionsSocial": [
-      {
-        "id": "linkedin",
-        "url": "https://www.linkedin.com/company/internispa/"
-      },
-      {
-        "id": "instagram",
-        "url": "https://www.instagram.com/interni.online/"
-      },
-      {
-        "url": "https://www.facebook.com/internispa/",
-        "id": "facebook"
-      }
-    ],
     "brandName": "Interni.Online",
+    "notesTitle": "General Info",
     "basePageTitle": "Interni shop",
     "footerCookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy",
-    "btnCart": "Add to cart",
-    "infoPage": "a-new-page"
+    "btnCart": "Add to cart"
   },
   "it": {
     "brandLink": "https://www.internionline.it/it",
     "footerPayoff": "Selected with [LOVE] from Interni spa</br>Via F.Turati 8, 20121 Milano",
-    "optionsNav": [
-      {
-        "target": "_blank",
-        "page": "a-new-page"
-      }
-    ],
     "footerTermsLink": "https://www.internionline.it/it/terms",
     "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/86321903",
-    "btnBuy": "Compralo",
-    "notesTitle": "General Info",
+    "btnBuy": "Buy now",
     "notesText": "Our terms and conditions are very clear. Check it out!",
-    "basePageTitle": "Lo shop di Interni",
+    "notesTitle": "General Info",
+    "basePageTitle": "Interni shop",
     "footerCookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy",
-    "btnCart": "Aggiungi",
-    "infoPage": "a-new-page"
+    "btnCart": "Add to cart"
   }
 }
