@@ -57,6 +57,7 @@ collections:
 
   - name: settings
     label: Settings
+    i18n: true
     files:
       - label: 'General'
         name: general
@@ -65,6 +66,7 @@ collections:
         editor:
           preview: false
         file: cms/settings/general.json
+        i18n: true
         fields:
           - label: Brand name
             name: brandName
@@ -72,22 +74,27 @@ collections:
 
           - label: Base page title
             name: basePageTitle
+            i18n: true
             widget: string
 
           - label: Footer payoff
             name: footerPayoff
+            i18n: true
             widget: string
 
           - label: Footer privacy link
             name: footerPrivacyLink
+            i18n: true
             widget: string
 
           - label: Footer cookie link
             name: footerCookieLink
+            i18n: true
             widget: string
 
           - label: Footer terms link
             name: footerTermsLink
+            i18n: true
             widget: string
 
           - label: Info Page
