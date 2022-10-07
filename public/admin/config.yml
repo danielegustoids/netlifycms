@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+media_folder: static/media
+public_folder: media
+publish_mode: editorial_workflow
+i18n:
+  structure: multiple_folders
+  locales: [en, it]
+  default_locale: en
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    identifier_field: name
+    media_folder: media
+    folder: 'cms/pages'
+    create: true
+    slug: '{{slug}}'
+    i18n: true
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: true }
+      - { label: 'Order', name: 'order', widget: 'number', value_type: "int", min: 0, required: true }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          required: true,
+        }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+        }
+      - {
+          label: "Gallery",
+           name: "galleryImages",
+           widget: "list",
+           summary: '{{fields.image}}',
+           field: {label: Image, name: image, widget: image}
+        }
+      - { label: 'Abstract', name: 'abstract', widget: 'text', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'text', i18n: true }
+
+  - name: settings
+    label: Settings
+    files:
+      - label: 'General'
+        name: general
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        file: cms/settings/general.json
+        fields:
+          - label: Brand name
+            name: brandName
+            widget: string
+
+          - label: Base page title
+            name: basePageTitle
+            widget: string
+
+          - label: Footer payoff
+            name: footerPayoff
+            widget: string
+
+          - label: Footer privacy link
+            name: footerPrivacyLink
+            widget: string
+
+          - label: Footer cookie link
+            name: footerCookieLink
+            widget: string
+
+          - label: Footer terms link
+            name: footerTermsLink
+            widget: string
+
+          - label: Info Page
+            name: infoPage
+            widget: relation
+            collection: pages
+            required: false
+            value_field: '{{slug}}'
+            search_fields: ['name']
