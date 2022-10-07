@@ -1,29 +1,41 @@
 {
-  "footerPayoff": "payoff nel footer",
-  "optionsNav": [
-    {
-      "target": "_parent",
-      "page": "page-02"
-    },
-    {
-      "target": "_parent",
-      "page": "page-01"
-    }
-  ],
-  "footerTermsLink": "#terms",
-  "footerPrivacyLink": "#privacy",
-  "optionsSocial": [
-    {
-      "id": "facebook",
-      "url": "#facebook"
-    },
-    {
-      "id": "instagram",
-      "url": "#instagram"
-    }
-  ],
-  "brandName": "Nome del marchio",
-  "basePageTitle": "titolo generale",
-  "footerCookieLink": "#cookie",
-  "infoPage": "page-01"
+  "en": {
+    "footerPayoff": "footer payoff",
+    "optionsNav": [
+      {
+        "target": "_blank",
+        "page": "page-02"
+      }
+    ],
+    "footerTermsLink": "#termsEn",
+    "footerPrivacyLink": "#privacyEn",
+    "optionsSocial": [
+      {
+        "id": "fb",
+        "url": "#facebook"
+      },
+      {
+        "id": "in",
+        "url": "#instagram"
+      }
+    ],
+    "brandName": "brand name",
+    "basePageTitle": "page title",
+    "footerCookieLink": "#cookieEn",
+    "infoPage": "page-01"
+  },
+  "it": {
+    "basePageTitle": "titolo pagina ",
+    "footerPayoff": "piede pagina claim",
+    "footerPrivacyLink": "#privacyIt",
+    "footerCookieLink": "#cookieIt",
+    "footerTermsLink": "#termsIt",
+    "infoPage": "page-01",
+    "optionsNav": [
+      {
+        "target": "_blank",
+        "page": "page-02"
+      }
+    ]
+  }
 }
