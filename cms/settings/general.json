@@ -1,18 +1,49 @@
 {
   "en": {
-    "brandName": "Interni.online",
-    "brandLink": "https://www.internionline.it/it",
-    "infoPage": "a-new-page",
+    "brandLink": "https://www.internionline.it/en",
+    "termsLink": "https://www.internionline.it/en/terms",
+    "footerPayoff": "Selected with {LOVE} from Interni spa<br>Via F.Turati 8, 20121 Milano",
+    "privacyLink": "https://www.iubenda.com/privacy-policy/57718443",
+    "legalText": "© 2022 Interni P.iva 00818300964",
     "btnBuy": "Buy now",
-    "btnCart": "Add to cart",
+    "privacyLabel": "Privacy",
+    "termsLabel": "Terms",
+    "social": [
+      {
+        "id": "facebook",
+        "url": "https://www.facebook.com/internispa/"
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/interni.online/"
+      },
+      {
+        "id": "linkedin",
+        "url": "https://www.linkedin.com/company/internispa/"
+      }
+    ],
     "generalTitle": "General Info",
-    "generalText": "Our terms and conditions are very clear."
+    "cookieLabel": "Cookie",
+    "brandName": "Interni.online",
+    "generalText": "Our terms and conditions are very clear.",
+    "btnCart": "Add to cart",
+    "infoPage": "a-new-page",
+    "cookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy"
   },
   "it": {
-    "brandLink": "https://www.internionline.it/en",
+    "brandLink": "https://www.internionline.it/it",
+    "termsLink": "https://www.internionline.it/it/terms",
+    "footerPayoff": "Selected with {LOVE} from Interni spa<br>Via F.Turati 8, 20121 Milano",
+    "privacyLink": "https://www.iubenda.com/privacy-policy/86321903",
+    "legalText": "© 2022 Interni P.iva 00818300964",
     "btnBuy": "Compralo",
-    "btnCart": "Aggiungi al carrello",
+    "privacyLabel": "Privacy",
+    "termsLabel": "Termini e condizioni",
     "generalTitle": "Informazioni",
-    "generalText": "Tutto quello che serve sapere."
+    "cookieLabel": "Cookie",
+    "generalText": "Tutto quello che serve sapere.",
+    "btnCart": "Aggiungi al carrello",
+    "infoPage": "a-new-page",
+    "cookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy"
   }
 }
