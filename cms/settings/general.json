@@ -1,41 +1,51 @@
 {
   "en": {
-    "footerPayoff": "footer payoff",
+    "brandLink": "https://www.internionline.it/it",
+    "footerPayoff": "Selected with [LOVE] from Interni spa<br>Via F.Turati 8, 20121 Milano",
     "optionsNav": [
       {
         "target": "_blank",
         "page": "a-new-page"
       }
     ],
-    "footerTermsLink": "#termsEn",
-    "footerPrivacyLink": "#privacyEn",
+    "footerTermsLink": "https://www.internionline.it/en/terms",
+    "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/57718443",
+    "btnBuy": "Buy now",
     "optionsSocial": [
       {
-        "id": "fb",
-        "url": "#facebook"
+        "id": "linkedin",
+        "url": "https://www.linkedin.com/company/internispa/"
       },
       {
-        "id": "in",
-        "url": "#instagram"
+        "id": "instagram",
+        "url": "https://www.instagram.com/interni.online/"
+      },
+      {
+        "url": "https://www.facebook.com/internispa/",
+        "id": "facebook"
       }
     ],
-    "brandName": "brand name",
-    "basePageTitle": "page title",
-    "footerCookieLink": "#cookieEn",
+    "brandName": "Interni.Online",
+    "basePageTitle": "Interni shop",
+    "footerCookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy",
+    "btnCart": "Add to cart",
     "infoPage": "a-new-page"
   },
   "it": {
-    "basePageTitle": "titolo pagina ",
-    "footerPayoff": "piede pagina claim",
-    "footerPrivacyLink": "#privacyIt",
-    "footerCookieLink": "#cookieIt",
-    "footerTermsLink": "#termsIt",
-    "infoPage": "a-new-page",
+    "brandLink": "https://www.internionline.it/en",
+    "footerPayoff": "Selected with [LOVE] from Interni spa<br>Via F.Turati 8, 20121 Milano",
     "optionsNav": [
       {
         "target": "_blank",
         "page": "a-new-page"
       }
-    ]
+    ],
+    "footerTermsLink": "https://www.internionline.it/it/terms",
+    "footerPrivacyLink": "https://www.iubenda.com/privacy-policy/86321903",
+    "btnBuy": "Compralo",
+    "basePageTitle": "Lo shop di Interni",
+    "footerCookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy",
+    "btnCart": "Aggiungi",
+    "infoPage": "a-new-page"
   }
 }
