@@ -1,0 +1,9 @@
+{
+  "brandName": "Nome del marchio",
+  "basePageTitle": "titolo generale",
+  "footerPayoff": "payoff nel footer",
+  "footerPrivacyLink": "#privacy",
+  "footerCookieLink": "#cookie",
+  "footerTermsLink": "#terms",
+  "infoPage": "page-01"
+}

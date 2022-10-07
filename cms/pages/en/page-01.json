@@ -1,0 +1,12 @@
+{
+  "date": "2022-10-07T09:54:50.340Z",
+  "title": "page 01",
+  "order": 1,
+  "thumbnail": "media/bg.jpg",
+  "galleryImages": [
+    "media/mesa-due-1.png",
+    "media/mesa-due-2.png"
+  ],
+  "abstract": "just abstract text",
+  "body": "the main text"
+}
