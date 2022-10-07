@@ -1,9 +1,9 @@
 {
   "en": {
-    "brandName": "Interni",
-    "brandLink": "#link"
+    "brandName": "Interni.online",
+    "brandLink": "https://www.internionline.it/it"
   },
   "it": {
-    "brandLink": "#link2"
+    "brandLink": "https://www.internionline.it/en"
   }
 }
