@@ -57,6 +57,7 @@ collections:
 
   - name: settings
     label: Settings
+    i18n: true
     files:
       - label: 'General'
         name: general
