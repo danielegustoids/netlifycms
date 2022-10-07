@@ -71,7 +71,7 @@ collections:
         fields:
           - { label: 'Brand name', name: 'brandName', widget: 'string' }
           - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
-          - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['pages.title'], value_field: 'pages.slug'}
+          - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['pages.name'], value_field: 'pages.slug'}
           - { label: 'Btn buy', name: 'btnBuy', widget: 'string', i18n: true }
           - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
           - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
