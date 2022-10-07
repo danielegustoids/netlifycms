@@ -27,8 +27,8 @@ collections:
     create: true
     slug: '{{slug}}'
     i18n: true
-    extension: "json"
-    format: "json"
+    extension: 'json'
+    format: 'json'
     editor:
       preview: false
     fields:
@@ -55,20 +55,19 @@ collections:
       - { label: 'Abstract', name: 'abstract', widget: 'text', i18n: true }
       - { label: 'Body', name: 'body', widget: 'text', i18n: true }
 
-  - name: settings
-    label: Settings
+  - name: 'settings'
+    label: 'Settings'
     i18n:
       structure: single_file
-      locales: [en, it]
-      default_locale: en
     files:
       - label: 'General'
-        name: general
-        extension: "json"
-        format: "json"
+        name: 'general'
+        extension: 'json'
+        format: 'json'
         editor:
           preview: false
         i18n: true
-        file: cms/settings/general.json
+        file: 'cms/settings/general.json'
         fields:
           - { label: 'Brand name', name: 'brandName', widget: 'string' }
+          - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
