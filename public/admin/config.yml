@@ -57,7 +57,10 @@ collections:
 
   - name: settings
     label: Settings
-    i18n: true
+    i18n:
+      structure: single_file
+      locales: [en, it]
+      default_locale: en
     files:
       - label: 'General'
         name: general
@@ -65,37 +68,32 @@ collections:
         format: "json"
         editor:
           preview: false
+        i18n: true
         file: cms/settings/general.json
         fields:
           - label: Brand name
             name: brandName
             widget: string
-
           - label: Base page title
             name: basePageTitle
-            i18n: true
             widget: string
-
+            i18n: true
           - label: Footer payoff
             name: footerPayoff
-            i18n: true
             widget: string
-
+            i18n: true
           - label: Footer privacy link
             name: footerPrivacyLink
-            i18n: true
             widget: string
-
+            i18n: true
           - label: Footer cookie link
             name: footerCookieLink
-            i18n: true
             widget: string
-
+            i18n: true
           - label: Footer terms link
             name: footerTermsLink
-            i18n: true
             widget: string
-
+            i18n: true
           - label: Info Page
             name: infoPage
             widget: relation
