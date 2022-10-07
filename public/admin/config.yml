@@ -101,25 +101,25 @@ collections:
           - label: Nav
             name: optionsNav
             widget: "list"
-            summary: '{{fields.lang}}: {{fields.infoPage}}'
+            summary: '{{fields.page}}'
             fields:
-              - label: Info Page
-                name: infoPage
+              - label: Page
+                name: page
                 widget: relation
                 collection: pages
                 required: false
                 value_field: '{{slug}}'
                 search_fields: ['name']
-              - label: Lang
-                name: lang
+              - label: Target
+                name: target
                 widget: select
-                default: ["en"]
-                options: ["en", "it"]
+                default: ["_parent"]
+                options: ["_parent", "_blank"]
 
           - label: Social
             name: optionsSocial
             widget: "list"
-            summary: '{{fields.lang}}: {{fields.infoPage}}'
+            summary: '{{fields.id}}: {{fields.url}}'
             fields:
               - label: Id
                 name: id
