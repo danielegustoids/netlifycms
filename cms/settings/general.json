@@ -58,6 +58,20 @@
       "btnCart": "Aggiungi",
       "infoPage": "a-new-page"
     },
+    "optionsSocial": [
+      {
+        "id": "linkedin",
+        "url": "https://www.linkedin.com/company/internispa/"
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/interni.online/"
+      },
+      {
+        "url": "https://www.facebook.com/internispa/",
+        "id": "facebook"
+      }
+    ],
     "notesText": "Our terms and conditions are very clear. Check it out!",
     "brandName": "Interni.Online",
     "notesTitle": "General Info",
