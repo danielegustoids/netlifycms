@@ -108,7 +108,7 @@ collections:
                   name: 'links'
                   widget: 'list'
                   fields:
-                  - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
                   - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
           - label: "Cart"
             name: "cart"
