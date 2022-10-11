@@ -72,7 +72,6 @@ collections:
         fields:
           - { label: 'Brand name', name: 'brandName', widget: 'string' }
           - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
-          - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
           - { label: 'Btn buy', name: 'btnBuy', widget: 'string', i18n: true }
           - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
           - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
@@ -129,6 +128,17 @@ collections:
               - { label: 'Notes Left', name: 'notesLeft', widget: 'string', required: false, i18n: true }
               - { label: 'Notes Right', name: 'notesRight', widget: 'string', required: false, i18n: true }
               - { label: 'Cta', name: 'cta', widget: 'string', required: false, i18n: true }
+    
+      - label: 'Navigation'
+        name: 'navigation'
+        extension: 'json'
+        format: 'json'
+        editor:
+          preview: false
+        i18n: true
+        file: 'cms/settings/navigation.json'
+        fields:
+          - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
           - label: 'Nav'
             name: 'navigation'
             widget: 'list'
@@ -142,5 +152,74 @@ collections:
             fields:
               - { label: 'Id', name: 'id', widget: 'string'}
               - { label: 'Url', name: 'url', widget: 'string'}
-          
+      - label: 'Footer'
+        name: 'footer'
+        extension: 'json'
+        format: 'json'
+        editor:
+          preview: false
+        i18n: true
+        file: 'cms/settings/footer.json'
+        fields:
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            summary: 'Footer contents'
+            i18n: true
+            fields:
+              - { label: 'Privacy label', name: 'privacyLabel', widget: 'string', i18n: true }
+              - { label: 'Privacy link', name: 'privacyLink', widget: 'string', i18n: true }
+              - { label: 'Cookie label', name: 'cookieLabel', widget: 'string', i18n: true }
+              - { label: 'Cookie link', name: 'cookieLink', widget: 'string', i18n: true }
+              - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
+              - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
+              - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
+          - label: "Footer Column 1"
+            name: "footerCol1"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                i18n: true
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }          
+          - label: "Footer Column 2"
+            name: "footerCol2"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                i18n: true
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+          - label: "Footer Column 3"
+            name: "footerCol3"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                i18n: true
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+          - label: "Footer Column 4"
+            name: "footerCol4"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
+              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+              - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+              - { label: 'Image', name: 'image', widget: 'image', i18n: false, required: false }
           
