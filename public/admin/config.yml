@@ -90,14 +90,15 @@ collections:
             widget: "object"
             summary: 'cart options'
             collapsed: true
+            i18n: true
             fields:
-              - { label: 'Title', name: 'title', widget: 'string', required: false }
-              - { label: 'Payments', name: 'payments', widget: 'image', required: false }
-              - { label: 'Pay with', name: 'payWith', widget: 'string', required: false }
-              - { label: 'Total', name: 'total', widget: 'string', required: false }
-              - { label: 'Notes Left', name: 'notesLeft', widget: 'string', required: false }
-              - { label: 'Notes Right', name: 'notesRight', widget: 'string', required: false }
-              - { label: 'Cta', name: 'cta', widget: 'string', required: false }
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - { label: 'Payments', name: 'payments', widget: 'image', required: false, i18n: false }
+              - { label: 'Pay with', name: 'payWith', widget: 'string', required: false, i18n: true }
+              - { label: 'Total', name: 'total', widget: 'string', required: false, i18n: true }
+              - { label: 'Notes Left', name: 'notesLeft', widget: 'string', required: false, i18n: true }
+              - { label: 'Notes Right', name: 'notesRight', widget: 'string', required: false, i18n: true }
+              - { label: 'Cta', name: 'cta', widget: 'string', required: false, i18n: true }
           - label: 'Nav'
             name: 'navigation'
             widget: 'list'
