@@ -91,23 +91,17 @@ collections:
               - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
               - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
               - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
-          - label: "Footer Menu"
-            name: "footerMenu"
+          - label: "Footer Column 1"
+            name: "footerCol1"
             widget: "object"
-            summary: 'Footer menu'
             i18n: true
             fields:
-              - label: "Column 1"
-                name: "col1"
-                widget: "object"
-                collapsed: true
-                i18n: true
+              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                i18n: true,
                 fields:
-                - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-                - label: 'Links'
-                  name: 'links'
-                  widget: 'list'
-                  fields:
                   - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
                   - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
           - label: "Cart"
