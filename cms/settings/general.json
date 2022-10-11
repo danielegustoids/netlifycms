@@ -25,6 +25,20 @@
     "generalTitle": "General Info",
     "cookieLabel": "Cookie",
     "brandName": "Interni.online",
+    "navigation": [
+      {
+        "navOption": "shipping-terms"
+      },
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      }
+    ],
     "generalText": "Our terms and conditions are very clear.",
     "btnCart": "Add to cart",
     "infoPage": "a-new-page",
@@ -41,6 +55,20 @@
     "termsLabel": "Termini e condizioni",
     "generalTitle": "Informazioni",
     "cookieLabel": "Cookie",
+    "navigation": [
+      {
+        "navOption": "shipping-terms"
+      },
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      }
+    ],
     "generalText": "Tutto quello che serve sapere.",
     "btnCart": "Aggiungi al carrello",
     "infoPage": "a-new-page",
