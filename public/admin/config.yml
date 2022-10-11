@@ -77,14 +77,75 @@ collections:
           - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
           - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
           - { label: 'General text', name: 'generalText', widget: 'string', i18n: true }
-          - { label: 'Privacy label', name: 'privacyLabel', widget: 'string', i18n: true }
-          - { label: 'Privacy link', name: 'privacyLink', widget: 'string', i18n: true }
-          - { label: 'Cookie label', name: 'cookieLabel', widget: 'string', i18n: true }
-          - { label: 'Cookie link', name: 'cookieLink', widget: 'string', i18n: true }
-          - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
-          - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
-          - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
-          - { label: 'Footer payoff', name: 'footerPayoff', widget: 'string', i18n: true }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            summary: 'Footer contents'
+            collapsed: true
+            i18n: true
+            fields:
+              - { label: 'Privacy label', name: 'privacyLabel', widget: 'string', i18n: true }
+              - { label: 'Privacy link', name: 'privacyLink', widget: 'string', i18n: true }
+              - { label: 'Cookie label', name: 'cookieLabel', widget: 'string', i18n: true }
+              - { label: 'Cookie link', name: 'cookieLink', widget: 'string', i18n: true }
+              - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
+              - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
+              - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
+          - label: "Footer Menu"
+            name: "footerMenu"
+            widget: "object"
+            summary: 'Footer menu'
+            i18n: true
+            fields:
+              - label: "Column 1"
+                name: "col1"
+                widget: "object"
+                collapsed: true
+                i18n: true
+                fields:
+                - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                - label: 'Links'
+                  name: 'links'
+                  widget: 'list'
+                  fields:
+                  - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+              - label: "Column 2"
+                name: "col2"
+                widget: "object"
+                collapsed: true
+                i18n: true
+                fields:
+                - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                - label: 'Links'
+                  name: 'links'
+                  widget: 'list'
+                  fields:
+                  - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+              - label: "Column 3"
+                name: "col3"
+                widget: "object"
+                collapsed: true
+                i18n: true
+                fields:
+                - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                - label: 'Links'
+                  name: 'links'
+                  widget: 'list'
+                  fields:
+                  - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
+                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+              - label: "Column 4"
+                name: "col2"
+                widget: "object"
+                collapsed: true
+                i18n: true
+                fields:
+                - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
+                - { label: 'Description', name: 'description', widget: 'string', i18n: true, required: false }
+                - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+                - { label: 'Image', name: 'image', widget: 'image', i18n: true, required: false }
           - label: "Cart"
             name: "cart"
             widget: "object"
