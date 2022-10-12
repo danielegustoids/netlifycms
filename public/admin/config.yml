@@ -10,6 +10,10 @@ backend:
 media_folder: static/media
 public_folder: media
 publish_mode: editorial_workflow
+#site_url: https://danielemilana.it  #https://www.netlifycms.org/docs/configuration-options/
+#display_url: https://your-site.com
+#logo_url: https://your-site.com/images/logo.svg
+locale: 'it'
 i18n:
   structure: multiple_files #multiple_folders
   locales: [en, it]
@@ -70,8 +74,6 @@ collections:
         i18n: true
         file: 'cms/settings/general.json'
         fields:
-          - { label: 'Brand name', name: 'brandName', widget: 'string' }
-          - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
           - { label: 'Btn buy', name: 'btnBuy', widget: 'string', i18n: true }
           - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
           - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
@@ -89,32 +91,6 @@ collections:
               - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
               - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
               - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
-          - label: "Footer Column 1"
-            name: "footerCol1"
-            widget: "object"
-            i18n: true
-            fields:
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - label: 'Links'
-                name: 'links'
-                widget: 'list'
-                i18n: true
-                fields:
-                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }          
-          - label: "Footer Column 2"
-            name: "footerCol2"
-            widget: "object"
-            i18n: true
-            fields:
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - label: 'Links'
-                name: 'links'
-                widget: 'list'
-                i18n: true
-                fields:
-                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
           - label: "Cart"
             name: "cart"
             widget: "object"
@@ -139,6 +115,8 @@ collections:
         file: 'cms/settings/navigation.json'
         fields:
           - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
+          - { label: 'Brand name', name: 'brandName', widget: 'string' }
+          - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
           - label: 'Nav'
             name: 'navigation'
             widget: 'list'
