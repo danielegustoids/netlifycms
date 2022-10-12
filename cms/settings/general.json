@@ -1,31 +1,32 @@
 {
   "en": {
-    "cart": {
-      "title": "Cart",
-      "payments": "media/whatsapp-image-2022-10-07-at-16.45.12.jpeg",
-      "payWith": "Pay with:",
-      "total": "Total",
-      "notesLeft": "Shipping",
-      "notesRight": "calculated at checkout",
-      "cta": "Checkout"
-    },
     "btnBuy": "Buy now",
-    "generalTitle": "General Info",
-    "generalText": "Our terms and conditions are very clear.",
-    "btnCart": "Add to cart"
+    "btnCart": "Add to cart",
+    "generalTitle": "Info",
+    "generalText": "our general infos",
+    "cart": {
+      "title": "cart",
+      "payments": "media/whatsapp-image-2022-10-07-at-16.45.12.jpeg",
+      "payWith": "pay with",
+      "total": "total",
+      "notesLeft": "shipping",
+      "notesRight": "on checkout",
+      "cta": "checkout"
+    }
   },
   "it": {
+    "btnBuy": "Buy now",
+    "btnCart": "Add to cart",
+    "generalTitle": "Info",
+    "generalText": "our general infos",
     "cart": {
-      "title": "Carrello",
-      "payWith": "Paga con:",
-      "total": "Totale",
-      "notesLeft": "Spedizione",
-      "notesRight": "calcolata al checktou",
-      "cta": "Acquista"
-    },
-    "btnBuy": "Compralo",
-    "generalTitle": "Informazioni",
-    "generalText": "Tutto quello che serve sapere.",
-    "btnCart": "Aggiungi al carrello",
+      "title": "cart",
+      "payments": "media/whatsapp-image-2022-10-07-at-16.45.12.jpeg",
+      "payWith": "pay with",
+      "total": "total",
+      "notesLeft": "shipping",
+      "notesRight": "on checkout",
+      "cta": "checkout"
+    }
   }
 }
