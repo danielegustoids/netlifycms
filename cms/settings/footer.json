@@ -1,0 +1,89 @@
+{
+  "en": {
+    "footer": {
+      "privacyLink": "https://www.iubenda.com/privacy-policy/57718443",
+      "privacyLabel": "privacy",
+      "legalText": "© 2022 Interni P.iva 00818300964",
+      "termsLink": "https://www.internionline.it/en/terms",
+      "termsLabel": "terms",
+      "cookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy",
+      "cookieLabel": "cookie"
+    },
+    "footerCol1": {
+      "label": "col1",
+      "links": [
+        {
+          "title": "link1",
+          "url": "#link1"
+        }
+      ]
+    },
+    "footerCol2": {
+      "label": "col2",
+      "links": [
+        {
+          "title": "link2",
+          "url": "#link2"
+        }
+      ]
+    },
+    "footerCol3": {
+      "label": "col3",
+      "links": [
+        {
+          "title": "link3",
+          "url": "#link3"
+        }
+      ]
+    },
+    "footerCol4": {
+      "title": "col4",
+      "label": "description",
+      "url": "#col4",
+      "image": "media/whatsapp-image-2022-10-07-at-16.45.12.jpeg"
+    }
+  },
+  "it": {
+    "footer": {
+      "privacyLabel": "privacy",
+      "privacyLink": "https://www.iubenda.com/privacy-policy/86321903",
+      "cookieLink": "https://www.iubenda.com/privacy-policy/86321903/cookie-policy",
+      "termsLink": "https://www.internionline.it/it/terms",
+      "legalText": "© 2022 Interni P.iva 00818300964© 2022 Interni P.iva 00818300964",
+      "termsLabel": "termini",
+      "cookieLabel": "cookie"
+    },
+    "footerCol1": {
+      "label": "col1",
+      "links": [
+        {
+          "title": "link1",
+          "url": "#link1"
+        }
+      ]
+    },
+    "footerCol2": {
+      "label": "col2",
+      "links": [
+        {
+          "title": "link2",
+          "url": "#link2"
+        }
+      ]
+    },
+    "footerCol3": {
+      "label": "col3",
+      "links": [
+        {
+          "title": "link3",
+          "url": "#link3"
+        }
+      ]
+    },
+    "footerCol4": {
+      "title": "col4",
+      "label": "descrizione",
+      "url": "#col4"
+    }
+  }
+}
