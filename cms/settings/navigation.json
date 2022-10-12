@@ -1,0 +1,43 @@
+{
+  "en": {
+    "infoPage": "a-new-page",
+    "brandName": "Interni.Online",
+    "brandLink": "https://www.internionline.it/en",
+    "navigation": [
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      }
+    ],
+    "social": [
+      {
+        "id": "facebook",
+        "url": "https://www.facebook.com/internispa/"
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/interni.online/"
+      }
+    ]
+  },
+  "it": {
+    "brandLink": "https://www.internionline.it/it",
+    "infoPage": "a-new-page",
+    "navigation": [
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      }
+    ]
+  }
+}

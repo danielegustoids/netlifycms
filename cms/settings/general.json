@@ -1,5 +1,14 @@
 {
   "en": {
+    "cart": {
+      "title": "Cart",
+      "payments": "media/whatsapp-image-2022-10-07-at-16.45.12.jpeg",
+      "payWith": "Pay with:",
+      "total": "Total",
+      "notesLeft": "Shipping",
+      "notesRight": "calculated at checkout",
+      "cta": "Checkout"
+    },
     "brandLink": "https://www.internionline.it/en",
     "termsLink": "https://www.internionline.it/en/terms",
     "footerPayoff": "Selected with {LOVE} from Interni spa<br>Via F.Turati 8, 20121 Milano",
@@ -67,6 +76,14 @@
     "cookieLink": "https://www.iubenda.com/privacy-policy/57718443/cookie-policy"
   },
   "it": {
+    "cart": {
+      "title": "Carrello",
+      "payWith": "Paga con:",
+      "total": "Totale",
+      "notesLeft": "Spedizione",
+      "notesRight": "calcolata al checktou",
+      "cta": "Acquista"
+    },
     "brandLink": "https://www.internionline.it/it",
     "termsLink": "https://www.internionline.it/it/terms",
     "footerPayoff": "Selected with {LOVE} from Interni spa<br>Via F.Turati 8, 20121 Milano",
