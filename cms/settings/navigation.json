@@ -26,6 +26,18 @@
     ]
   },
   "it": {
-    "brandLink": "https://www.internionline.it/it"
+    "brandLink": "https://www.internionline.it/it",
+    "infoPage": "a-new-page",
+    "navigation": [
+      {
+        "navOption": "delivery-time-tracking"
+      },
+      {
+        "navOption": "pick-it-up-at-our-stores"
+      },
+      {
+        "navOption": "returns-and-complaints"
+      }
+    ]
   }
 }
