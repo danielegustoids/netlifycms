@@ -2,189 +2,455 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
-media_folder: static/media
-public_folder: media
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+media_folder: public/static/media
 publish_mode: editorial_workflow
-#site_url: https://danielemilana.it  #https://www.netlifycms.org/docs/configuration-options/
-#display_url: https://your-site.com
-#logo_url: https://your-site.com/images/logo.svg
-locale: 'it'
 i18n:
   structure: multiple_files #multiple_folders
   locales: [en, it]
   default_locale: en
 slug:
-  encoding: 'ascii'
+  encoding: "ascii"
   clean_accents: true
-  sanitize_replacement: '-'
+  sanitize_replacement: "-"
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: "pages"
+    label: "Pages"
     identifier_field: name
-    media_folder: media
-    folder: 'cms/pages'
+    folder: cms/pages
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     i18n: true
-    extension: 'json'
-    format: 'json'
+    extension: "json"
+    format: "json"
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: true }
-      - { label: 'Order', name: 'order', widget: 'number', value_type: "int", min: 0, required: true }
       - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
+          label: "Title",
+          name: "title",
+          widget: "string",
+          i18n: true,
           required: true,
         }
       - {
-          label: 'Featured Image',
-          name: 'thumbnail',
-          widget: 'image',
+          label: "Order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          min: 0,
+          required: true,
+        }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: true,
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
           required: false,
         }
       - {
           label: "Gallery",
-           name: "galleryImages",
-           widget: "list",
-           summary: '{{fields.image}}',
-           field: {label: Image, name: image, widget: image}
+          name: "galleryImages",
+          widget: "list",
+          summary: "{{fields.image}}",
+          field: { label: Image, name: image, widget: image },
         }
-      - { label: 'Abstract', name: 'abstract', widget: 'text', i18n: true, required: false }
-      - { label: 'Body', name: 'body', widget: 'text', i18n: true, required: false }
+      - {
+          label: "Abstract",
+          name: "abstract",
+          widget: "text",
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "text",
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: "Locale",
+          name: "locale",
+          widget: "select",
+          options: ["en", "it"],
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: "Color",
+          name: "color",
+          widget: "color",
+          i18n: true,
+          required: false,
+        }
 
-  - name: 'settings'
-    label: 'Settings'
+  - name: "settings"
+    label: "Settings"
     i18n:
       structure: single_file
     files:
-      - label: 'General'
-        name: 'general'
-        extension: 'json'
-        format: 'json'
+      - label: "General"
+        name: "general"
+        extension: "json"
+        format: "json"
         editor:
           preview: false
         i18n: true
-        file: 'cms/settings/general.json'
+        file: "cms/settings/general.json"
         fields:
-          - { label: 'Btn buy', name: 'btnBuy', widget: 'string', i18n: true }
-          - { label: 'Btn cart', name: 'btnCart', widget: 'string', i18n: true }
-          - { label: 'General title', name: 'generalTitle', widget: 'string', i18n: true }
-          - { label: 'General text', name: 'generalText', widget: 'string', i18n: true }
-          - label: "Cart"
-            name: "cart"
-            widget: "object"
-            summary: 'cart options'
+          - {
+              label: "Button Discover",
+              name: "discoverLabel",
+              widget: "string",
+              i18n: true
+            }
+          - {
+              label: "Button Add To Cart",
+              name: "addToCartLabel",
+              widget: "string",
+              i18n: true
+            }
+          - {
+              label: "Button Read More",
+              name: "readMoreLabel",
+              widget: "string",
+              i18n: true
+            }
+          - {
+              label: "Info Title",
+              name: "infoTitle",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Info Description",
+              name: "infoDescription",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Linea 1 Paginazione",
+              name: "paginationLine1",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Linea 2 Paginazione",
+              name: "paginationLine2",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Label Disponibile in",
+              name: "availableLabel",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Label Settimane",
+              name: "weeksLabel",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Label Settimana",
+              name: "weekLabel",
+              widget: "string",
+              i18n: true,
+            }
+
+      - label: "Navigation"
+        name: "navigation"
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        i18n: true
+        file: "cms/settings/navigation.json"
+        fields:
+          - label: "Nav"
+            name: "navigation"
+            widget: "list"
             i18n: true
             fields:
-              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
-              - { label: 'Payments', name: 'payments', widget: 'image', required: false, i18n: false }
-              - { label: 'Pay with', name: 'payWith', widget: 'string', required: false, i18n: true }
-              - { label: 'Total', name: 'total', widget: 'string', required: false, i18n: true }
-              - { label: 'Notes Left', name: 'notesLeft', widget: 'string', required: false, i18n: true }
-              - { label: 'Notes Right', name: 'notesRight', widget: 'string', required: false, i18n: true }
-              - { label: 'Cta', name: 'cta', widget: 'string', required: false, i18n: true }
-    
-      - label: 'Navigation'
-        name: 'navigation'
-        extension: 'json'
-        format: 'json'
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                i18n: true
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Url",
+                      name: "url",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Target Blank",
+                      name: "isExternal",
+                      widget: "boolean",
+                      i18n: true,
+                      required: false,
+                    }
+      - label: "Footer"
+        name: "footer"
+        extension: "json"
+        format: "json"
         editor:
           preview: false
         i18n: true
-        file: 'cms/settings/navigation.json'
-        fields:
-          - { label: 'Info page', name: 'infoPage', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
-          - { label: 'Brand name', name: 'brandName', widget: 'string' }
-          - { label: 'Brand name link', name: 'brandLink', widget: 'string', i18n: true }
-          - label: 'Nav'
-            name: 'navigation'
-            widget: 'list'
-            summary: '{{fields.page}}'
-            fields:
-              - { label: 'Route', name: 'navOption', widget: 'relation', collection: 'pages', search_fields: ['name'], value_field: '{{slug}}'}
-          - label: 'Social'
-            name: 'social'
-            widget: 'list'
-            summary: '{{fields.id}}'
-            fields:
-              - { label: 'Id', name: 'id', widget: 'string'}
-              - { label: 'Url', name: 'url', widget: 'string'}
-      - label: 'Footer'
-        name: 'footer'
-        extension: 'json'
-        format: 'json'
-        editor:
-          preview: false
-        i18n: true
-        file: 'cms/settings/footer.json'
+        file: "cms/settings/footer.json"
         fields:
           - label: "Footer"
             name: "footer"
             widget: "object"
-            summary: 'Footer contents'
+            summary: "Footer contents"
             i18n: true
             fields:
-              - { label: 'Privacy label', name: 'privacyLabel', widget: 'string', i18n: true }
-              - { label: 'Privacy link', name: 'privacyLink', widget: 'string', i18n: true }
-              - { label: 'Cookie label', name: 'cookieLabel', widget: 'string', i18n: true }
-              - { label: 'Cookie link', name: 'cookieLink', widget: 'string', i18n: true }
-              - { label: 'Terms label', name: 'termsLabel', widget: 'string', i18n: true }
-              - { label: 'Terms link', name: 'termsLink', widget: 'string', i18n: true }
-              - { label: 'Legal text', name: 'legalText', widget: 'string', i18n: true }
+              - {
+                  label: "Legal text",
+                  name: "legalText",
+                  widget: "string",
+                  i18n: true,
+                }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                i18n: true
+                fields:
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Url",
+                      name: "url",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
           - label: "Footer Column 1"
             name: "footerCol1"
             widget: "object"
             i18n: true
             fields:
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - label: 'Links'
-                name: 'links'
-                widget: 'list'
+              - {
+                  label: "Label",
+                  name: "label",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - label: "Links"
+                name: "links"
+                widget: "list"
                 i18n: true
                 fields:
-                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }          
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Url",
+                      name: "url",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
           - label: "Footer Column 2"
             name: "footerCol2"
             widget: "object"
             i18n: true
             fields:
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - label: 'Links'
-                name: 'links'
-                widget: 'list'
+              - {
+                  label: "Label",
+                  name: "label",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - label: "Links"
+                name: "links"
+                widget: "list"
                 i18n: true
                 fields:
-                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Url",
+                      name: "url",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
           - label: "Footer Column 3"
             name: "footerCol3"
             widget: "object"
             i18n: true
             fields:
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - label: 'Links'
-                name: 'links'
-                widget: 'list'
+              - {
+                  label: "Label",
+                  name: "label",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - label: "Links"
+                name: "links"
+                widget: "list"
                 i18n: true
                 fields:
-                  - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-                  - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
+                  - {
+                      label: "Url",
+                      name: "url",
+                      widget: "string",
+                      i18n: true,
+                      required: false,
+                    }
           - label: "Footer Column 4"
             name: "footerCol4"
             widget: "object"
             i18n: true
             fields:
-              - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: false }
-              - { label: 'Label', name: 'label', widget: 'string', i18n: true, required: false }
-              - { label: 'Url', name: 'url', widget: 'string', i18n: true, required: false }
-              - { label: 'Image', name: 'image', widget: 'image', i18n: false, required: false }
-          
+              - {
+                  label: "Label",
+                  name: "label",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - {
+                  label: "Immagine",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                  i18n: false,
+                }
+              - {
+                  label: "Url",
+                  name: "url",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "string",
+                  i18n: true,
+                  required: false,
+                }
+      - label: "Cart"
+        name: "cart"
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        i18n: true
+        file: "cms/settings/cart.json"
+        fields:
+            - {
+                label: "Title",
+                name: "title",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Label Empty Cart",
+                name: "emptyLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Payment Logos",
+                name: "paymentLogos",
+                widget: "image",
+                required: false,
+                i18n: false,
+              }
+            - {
+                label: "Label Payment",
+                name: "paymentLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Label Total",
+                name: "totalLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Label Delivery",
+                name: "deliveryLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Label Next Steps",
+                name: "nextStepsLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
+            - {
+                label: "Label Checkout",
+                name: "checkoutLabel",
+                widget: "string",
+                required: false,
+                i18n: true,
+              }
