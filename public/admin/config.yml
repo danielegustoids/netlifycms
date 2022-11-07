@@ -208,27 +208,9 @@ collections:
                 widget: "list"
                 i18n: true
                 fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Url",
-                      name: "url",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Target Blank",
-                      name: "isExternal",
-                      widget: "boolean",
-                      i18n: true,
-                      required: false,
-                    }
+                  - { label: Title, name: title, widget: string, i18n: true, required: false }
+                  - { label: Url, name: url, widget: string, i18n: true, required: false }
+                  - { label: Target Blank, name: isExternal, widget: boolean, i18n: true, required: false }
       - label: "Footer"
         name: "footer"
         extension: "json"
@@ -255,20 +237,8 @@ collections:
                 widget: "list"
                 i18n: true
                 fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Url",
-                      name: "url",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
+                  - { label: Title, name: title, widget: string, i18n: true, required: false }
+                  - { label: Url, name: url, widget: string, i18n: true, required: false }
           - label: "Footer Column 1"
             name: "footerCol1"
             widget: "object"
@@ -286,20 +256,8 @@ collections:
                 widget: "list"
                 i18n: true
                 fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Url",
-                      name: "url",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
+                  - { label: Title, name: title, widget: string, i18n: true, required: false }
+                  - { label: Url, name: url, widget: string, i18n: true, required: false }
           - label: "Footer Column 2"
             name: "footerCol2"
             widget: "object"
@@ -317,20 +275,8 @@ collections:
                 widget: "list"
                 i18n: true
                 fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Url",
-                      name: "url",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
+                  - { label: Title, name: title, widget: string, i18n: true, required: false }
+                  - { label: Url, name: url, widget: string, i18n: true, required: false }
           - label: "Footer Column 3"
             name: "footerCol3"
             widget: "object"
@@ -348,20 +294,8 @@ collections:
                 widget: "list"
                 i18n: true
                 fields:
-                  - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
-                  - {
-                      label: "Url",
-                      name: "url",
-                      widget: "string",
-                      i18n: true,
-                      required: false,
-                    }
+                  - { label: Title, name: title, widget: string, i18n: true, required: false }
+                  - { label: Url, name: url, widget: string, i18n: true, required: false }
           - label: "Footer Column 4"
             name: "footerCol4"
             widget: "object"
