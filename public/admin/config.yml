@@ -31,6 +31,19 @@ collections:
       preview: false
     fields:
       - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: true,
+        }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          i18n: true,
+          required: false,
+        }
+      - {
           label: "Title",
           name: "title",
           widget: "string",
@@ -38,50 +51,9 @@ collections:
           required: true,
         }
       - {
-          label: "Order",
-          name: "order",
-          widget: "number",
-          value_type: "int",
-          min: 0,
-          required: true,
-        }
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          required: true,
-        }
-      - {
-          label: "Featured Image",
-          name: "thumbnail",
-          widget: "image",
-          required: false,
-        }
-      - {
-          label: "Gallery",
-          name: "galleryImages",
-          widget: "list",
-          summary: "{{fields.image}}",
-          field: { label: Image, name: image, widget: image },
-        }
-      - {
           label: "Abstract",
           name: "abstract",
           widget: "text",
-          i18n: true,
-          required: false,
-        }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "text",
-          i18n: true,
-          required: false,
-        }
-      - {
-          label: "Slug",
-          name: "slug",
-          widget: "string",
           i18n: true,
           required: false,
         }
@@ -97,8 +69,17 @@ collections:
           label: "Color",
           name: "color",
           widget: "color",
-          i18n: true,
+          i18n: false,
           required: false,
+        }
+      - {
+          label: "Template",
+          name: "template",
+          widget: "select",
+          options: ["information", "editorial"],
+          default: ["editorial"],
+          i18n: false,
+          required: true,
         }
 
   - name: "settings"
