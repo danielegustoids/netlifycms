@@ -93,8 +93,19 @@ collections:
             - { label: Content abstract, name: content_abstract, widget: text }
             - { label: Content body, name: content_body, widget: text }
             - { label: Content poster, name: content_poster, widget: image }
-            - { label: Content video, name: content_video, widget: string,  comment: "Provide a full YouTube url"}
-        
+            - { label: Content video, name: content_video, widget: string }
+            - label: Content button
+              name: content_button
+              widget: object
+              fields:
+                - { label: Label, name: content_button_label, widget: string }
+                - { label: Link, name: content_button_link, widget: string }
+            - label: Left Titles
+              name: content_titles
+              widget: object
+              fields:
+                - { label: Title, name: content_titles_title, widget: string }
+                - { label: Subtitle, name: content_titles_subtitles, widget: string }
 
   - name: "settings"
     label: "Settings"
