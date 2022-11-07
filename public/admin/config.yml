@@ -85,7 +85,7 @@ collections:
         name: "content"
         widget: "list"
         collapsed: false
-        i18n: true,
+        i18n: true
         required: false
         summary: '{{fields.content_title}}'
         fields: 
