@@ -89,7 +89,11 @@ collections:
         required: false
         summary: '{{fields.content_title}}'
         fields: 
-            - { label: "Content title", name: "content_title", widget: "string" }
+            - { label: Content title, name: content_title, widget: string }
+            - { label: Content abstract, name: content_abstract, widget: text }
+            - { label: Content body, name: content_body, widget: text }
+            - { label: Content poster, name: content_poster, widget: image }
+            - { label: Content video, name: content_video, widget: string,  comment: "Provide a full YouTube url"}
         
 
   - name: "settings"
