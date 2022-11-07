@@ -81,6 +81,16 @@ collections:
           i18n: false,
           required: true,
         }
+      - label: "Content"
+        name: "content"
+        widget: "list"
+        collapsed: false
+        i18n: true,
+        required: false
+        summary: '{{fields.content_title}}'
+        fields: 
+            - { label: "Content title", name: "content_title", widget: "string" }
+        
 
   - name: "settings"
     label: "Settings"
